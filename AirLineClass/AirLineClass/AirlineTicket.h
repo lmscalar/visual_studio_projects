@@ -1,0 +1,31 @@
+#pragma once
+#include <string>
+
+
+class AirlineTicket
+{
+public:
+	AirlineTicket();
+	~AirlineTicket();
+
+	double calculatePriceInDollars() const;
+
+
+	// getters and setters
+	const std::string& getPassengerName() const;    // "inspectors"
+	void setPassengerName(const std::string& name); // "mutators"
+
+	int getNumberOfMiles() const;
+	void setNumberOfMiles(int miles);
+
+	bool hasEliteSuperRewardsStatus() const;
+	void setHasEliteSuperRewardsStatus(bool status);
+
+private:
+	std::string mPassengerName;
+	int mNumberOfMiles;
+	bool mHasEliteSuperRewardsStatus;
+
+};
+
+
